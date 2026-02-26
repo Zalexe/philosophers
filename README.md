@@ -9,43 +9,43 @@ The objective is to simulate multiple philosophers sitting at a table, alternati
 
 The project includes:
 
-Creating and managing multiple threads (one per philosopher)
+·  Creating and managing multiple threads (one per philosopher)
 
-Synchronizing shared resources using mutexes
+·  Synchronizing shared resources using mutexes
 
-Preventing race conditions
+·  Preventing race conditions
 
-Avoiding deadlocks
+·  Avoiding deadlocks
 
-Detecting philosopher death based on timing constraints
+·  Detecting philosopher death based on timing constraints
 
-Handling precise time measurement
+·  Handling precise time measurement
 
-Ensuring clean thread termination and memory management
+·  Ensuring clean thread termination and memory management
 
 Implemented in:
 
-C
+·  C
 
-POSIX Threads (pthreads)
+·  POSIX Threads (pthreads)
 
-Mutexes for synchronization
+·  Mutexes for synchronization
 
 ## Project Focus
 
 Philosophers focuses on:
 
-Understanding thread creation and lifecycle management
+·  Understanding thread creation and lifecycle management
 
-Coordinating access to shared resources
+·  Coordinating access to shared resources
 
-Designing synchronization strategies
+·  Designing synchronization strategies
 
-Managing concurrent state safely
+·  Managing concurrent state safely
 
-Working with timing constraints in a multithreaded environment
+·  Working with timing constraints in a multithreaded environment
 
-Structuring deterministic behavior under concurrency
+·  Structuring deterministic behavior under concurrency
 
 ## Technical Scope
 
@@ -53,16 +53,16 @@ The project explores fundamental concurrency concepts. It involves designing a s
 
 Special attention is required to:
 
-Order of mutex locking
+·  Order of mutex locking
 
-Preventing circular wait conditions
+·  Preventing circular wait conditions
 
-Monitoring thread state without introducing data races
+·  Monitoring thread state without introducing data races
 
-Balancing performance with correctness
+·  Balancing performance with correctness
 
 The emphasis is on understanding how concurrent systems behave and how subtle timing issues can affect correctness.
 
 ## Build & Run
-make
-./philo number_of_philosophers time_to_die time_to_eat time_to_sleep [number_of_times_each_philosopher_must_eat]
+    make
+    ./philo number_of_philosophers time_to_die time_to_eat time_to_sleep [number_of_times_each_philosopher_must_eat]
